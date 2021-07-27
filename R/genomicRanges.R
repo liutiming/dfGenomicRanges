@@ -14,7 +14,7 @@ tibble_subsetByOverlaps <- function(range_1, range_2) {
 
 #' @export
 mutate_chr  <- function(tbl) {
-  result <- tbl %>% mutate(chr = str_c("chr", chr))
+  result <- dplyr::mutate(tbl, chr = stringr::str_c("chr", chr))
   return(result)
 }
 
