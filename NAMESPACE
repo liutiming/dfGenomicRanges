@@ -2,6 +2,9 @@
 
 export("%>%")
 export(mutate_chr)
+export(select_score_allele)
 export(tibble_makeGenomicRanges)
 export(tibble_subsetByOverlaps)
+export(write_chr_tbl)
+export(write_tsv_target)
 importFrom(magrittr,"%>%")
