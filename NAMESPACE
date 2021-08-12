@@ -2,6 +2,7 @@
 
 export("%>%")
 export(mutate_chr)
+export(plink2_bfile_general)
 export(select_score_allele)
 export(tibble_makeGenomicRanges)
 export(tibble_subsetByOverlaps)
