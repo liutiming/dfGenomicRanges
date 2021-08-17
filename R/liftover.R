@@ -3,9 +3,10 @@
 
 get_liftOver_chain <- function() {
   ahub <- AnnotationHub::AnnotationHub()
-  ahub.chain <- subset(ahub, rdataclass == "ChainFile" & species == "Homo sapiens")
 
-  AnnotationHub::query(ahub.chain, c("hg19", "hg38"))
+  ahub.chain <- AnnotationHub::subset(ahub, rdataclass == "ChainFile" & species == "Homo sapiens")
+
+  # AnnotationHub::query(ahub.chain, c("hg19", "hg38"))
   chain <- ahub.chain[ahub.chain$title == "hg19ToHg38.over.chain.gz"][[1]]
   return(chain)
 }
