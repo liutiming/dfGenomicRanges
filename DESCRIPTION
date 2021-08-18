@@ -14,7 +14,10 @@ Imports:
     magrittr,
     tibble, 
     dplyr,
-    GenomicRanges
+    glue,rtracklayer,stringr,tidyr,vroom,
+    GenomicRanges,
+    AnnotationHub,IRanges 
+BiocViews:
 Suggests: 
     testthat
 Depends: 
