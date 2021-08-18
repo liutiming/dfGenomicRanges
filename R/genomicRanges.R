@@ -11,12 +11,3 @@ tibble_subsetByOverlaps <- function(range_1, range_2) {
     dplyr::rename("chr" = "seqnames", "pos" = "start")  %>%
     dplyr::select(chr, pos, end)
 }
-
-#' @export
-mutate_chr  <- function(tbl) {
-  result <- dplyr::mutate(tbl, chr = stringr::str_c("chr", chr))
-  return(result)
-}
-
-
-

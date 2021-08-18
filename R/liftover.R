@@ -26,3 +26,5 @@ df_liftOver <- function(variantTbl, chain) {
     dplyr::rename("chr" = "seqnames", "pos" = "start")  %>%
     dplyr::select(-c(end, width, strand))
 }
+
+
