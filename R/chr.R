@@ -9,7 +9,7 @@ mutate_chr  <- function(tbl) {
 
 #' @export
 check_chr_has_suffix <- function(tbl) {
-  chr_str <- tbl[1,"x"]
+  chr_str <- tbl[1,"chr"]
   if (stringr::str_detect(chr_str, "chr")) {
     return(TRUE)
   } else {
