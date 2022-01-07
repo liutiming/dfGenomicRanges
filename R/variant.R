@@ -57,5 +57,3 @@ make_match_variant <- function(location_tbl, major_test, minor_test, major_keep,
     select(all_of(original_cols), match)
 }
 
- datapasta::vector_paste(plink_bim_col_names)
-
